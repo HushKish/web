@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="st.css">
+        <!-- 위 코드 라이브러리 include의 역할을 함.=> 공통된 css코드를 사용해야할 때 하나 수정하면 다같이 적용된다는 이점이 있고 
+            웹페이지에서 불러올때도 한번 다운받고 변경되지 않는이상 그것을 저장하여 계속불러와 쓰는(캐싱)기법에 의해 훨씬 효율적 -->
+    </head>
+
+    <body>   
+        <h1>h1size</h1>
+        <h1>h1size</h1>
+        <h2>big</h2>
+        
+        <div id="grid">
+            <ol> 
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+        </div>
+
+        <div id="out">
+            <div>navigtino</div>
+            <div>like it</div>
+        </div>
+        <!-- 제목과 같이 특별한 의미를 부여하지 않는데 나란히 쓰고 싶을때,묶어서 보고싶을 때 div나 span사용 둘의 차이는 block이냐 inline이냐 -->
+
+        <h3><a href="idx.html" style="color:skyblue; text-decoration:underline">하이퍼링크</a></h3>
+        <!-- html문법인 style속성을 이용하여 뒷코드를 css로 해석하라는 뜻 전달 -->
+        <!-- style태그위에 뒤집어 씀 -->
+        <!-- :앞부분은 property 즉 속성이라부르고 뒷부분은 value즉 값이라 부름 -->
+        <h3><a href="under.html" class="saw active" id="id">하이퍼링크2</a></h3>
+        <a href="https://www.notion.so/HTML-448c84b61ece4af09dee0177c537fb4f" class="saw" target="_blank" title="툴팁자리">하이퍼링크</a>
+        <br>새탭에서 열리게됨<br>
+    </body>
+</html>
+
+
+<!-- <style>
+    a{
+        color:blueviolet;
+        text-decoration: none; 
+        /* 하이퍼링크 밑줄을 없애는 코드 */
+        
+    }
+    /* 이런식으로 효과를 누구에게 줄지 선택한다고 해서 이를 선택자로 부름 
+    선택자에 적용될 효과=declaration으로 부름*/
+    h1{
+        font-size: 45px;
+        text-align: center;
+        padding: 20px;
+        /* 콘텐츠와 테두리 사이 여백넣기 padding-right로 왼쪽 간격도 조정가능*/
+        margin: 2px;
+        /* 테두리사이 간격을 설정 */
+        width: 1000px;
+        /* 가로갈이결정 */
+    }
+    #id{
+        color: yellow;
+    }
+     /* id선택자의 값인 id는 웹페이지에서 딱 한번만 등장하게 해야함 */
+    .active{
+        color:blueviolet;
+    }
+     /* 이코드가 saw코드보다 아래로 가면 saw를 뒤집어 씀 즉 나중에 명령한 것일수록 힘이쌤
+     but 선택자에 따라 절대적인 힘이 정해지기도 함 id선택자>class선택자>태그선택자*/
+    .saw{
+        color:green;
+        /* 태그가 아닌 value값이 saw이기때문에 .을 붙여줌 */
+    }
+    h1,a{
+        border-width: 5px;
+        border-color: rebeccapurple;
+        border-style: dotted;
+    }
+    /* 태투리 표시가능
+    h1은 화면 전체를 씀,자동줄바꿈,그러나 a태그는 그렇지않음 이를 각각 block level element,inline element라고함 but display: block or inline이란 속성을 추가해주면 디폴트값을 변경할 수 도 있음 */
+    h2{
+        border-bottom: 1px solid green;
+    }
+    #grid ol{
+        border-right: 1px soild gray;
+        width :100px;
+    }
+    /* 모든 ol중 parent가 grid인 ol을 선택자로 함 */
+    #out{
+        border: 5px soild pink;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        /* grid를 이용한 나란히 배치 150쓰고 남은 것차지하라는 뜻
+        2fr 3fr쓰면 앞은 5분2,뒤는 5분의3차지 */
+    }
+    div{
+        border: 5px soild gray;
+    }
+    @media (max-width: 800px){
+        #out{
+            display: block;
+        }
+        #grid ol{
+            border-right: none;
+        }
+    }
+    /* 미디어 쿼리-스마트폰과 같이 창의 크기가 작은환경에서 실행되거나 창의 크기를 줄이면 그에 따라 디자인이 최적화된 상태로 바뀌게 만듬 
+    최대가 800 == 800보다 작은 크기란 의미 => 그 상황일 때 grid를 취솨고 선을 지운다는 코드,위 상황일 때 덮어쓴다는 생각을 하면됨*/
+
+</style> -->
