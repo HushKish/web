@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NAVER</title>
+    </head>
+    <body>
+        <h1>javascript</h1>
+        <br>
+        <!-- <!-- <input type ="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        "> -->
+        <!-- document.qu~()이걸로 작업을 가할 태그,클래스,id선택(''안에 .class나 #id를 넣어줄 수 있음),거기에 style속성선택,거기에 color값을 선택->설정 -->
+        <!-- <input type ="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        ">  -->
+        <script src="color.js"></script> 
+        <!-- js코드를 파일에 따로 저장 -->
+        
+        <input type="button" value="night" onclick="nightDayHandler(this)">
+
+        <script>
+            var Body = {
+                setColor: function(color){
+                    document.querySelector('body').style.color = color;
+                },
+                setBackgroundColor: function(color){
+                    document.querySelector('body').style.backgroundColor = color;
+                }
+            }
+            document.write('hello world<br>');
+            document.write(1+1);
+            document.write('hellieos'.toUpperCase()); // 대문자로 표시
+            
+            //  js는 동적이므로 연산결과를 화면에 띄움
+        </script>
+        <br>
+        <input type="button" value="hi" onclick="alert(1+1)">
+        <br>
+        <!-- hi라고 쓰인 버튼을 만듦 onclick이란 html input태그의 속성의 값으론 무조건 js코드가 와야함-->
+        <input type="text" onchange="alert('changed')">
+        <!-- 내용을 입력하고 앤터를 치면 이전에 엔터를 쳤을 때 적힌 내용과 비교해서 다른 경우에 js코드실행 -->
+        <br>
+        <input type="text" onkeydown="alert('keydown')">
+        <ol>
+            <a href = "1.html">html</a>
+            <a href = "css.html">css</a>
+        </ol>
+    </body>
+</html>
